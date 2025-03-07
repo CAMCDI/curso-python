@@ -25,8 +25,9 @@ df = pd.DataFrame ({
 X = df[['Fertilizante' (kg)]].values
 Y = df['Papas (toneladas)'].values
 
-
 #show(df)
+
+# todavia no esta terminado----> pendiente 
 
 
 #print(df.head()) #muestra las primeras filas del data set 
