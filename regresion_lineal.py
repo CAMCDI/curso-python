@@ -3,6 +3,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 from pandasgui import show
 from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LinearRegression
 
 
 # crear datos ficticios
@@ -25,16 +26,18 @@ df = pd.DataFrame ({
 X = df[['Fertilizante' (kg)]].values
 Y = df['Papas (toneladas)'].values
 
-#show(df)
+#separar los datos de netrenamiento y prueba
+X_train, X_test, y_train, y_test = train_test_split(x,y, test_size=0.2, random_state=0)
 
-# todavia no esta terminado----> pendiente 
+#definir modelo y entrenarlo
+regressor = LinealRegression()
+regressor.fit(X_train,y_train)
+
+#hacer la prediccion 
+y_pred = regressor.predict(X_test)
 
 
-#print(df.head()) #muestra las primeras filas del data set 
 
-#print(df.info()) # informacion sobre las columnas y los tipos de datos
 
-#print(df.describe()) # estadistoca descriptova para columnas y numeros
- 
 
 
