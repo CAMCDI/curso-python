@@ -1,3 +1,4 @@
 # curso-python
 
-todavia no esta terminado----> ultima actualizacion el dia 07/03/2025
+
+## aqui se agregran varios proyectos de python
